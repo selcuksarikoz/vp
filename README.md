@@ -87,3 +87,7 @@ Simple structure to prep for a real dataLayer/GTM setup:
 - Swap the basic search for something like Algolia.
 - Add integration tests for API modules and server actions.
 - Move the backend to something like Drizzle if it outgrows `json-server`.
+- Implement tRPC or Drizzle ORM/Prisma for a proper database structure with more dummy data and pagination support.
+- Add Open Graph metadata for better social sharing.
+- Build a dashboard to manage tenant/whitelabel settings instead of hardcoded env variables.
+- Implement true multi-tenant architecture with database isolation for each tenant.

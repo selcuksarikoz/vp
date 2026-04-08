@@ -14,6 +14,11 @@ import {
 import { getProductRating, getProductRatingEntries, getProductRatingState } from './ratings';
 
 /**
+ * @description Aggregates all API functions into a single module for convenient importing.
+ * This module provides high-level data access for products, categories, cart, and ratings.
+ */
+
+/**
  * @description Resolves a product variant from a product and variant id.
  * @param product The product containing variants.
  * @param variantId The selected variant id.
