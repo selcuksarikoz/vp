@@ -10,12 +10,14 @@ type ProductMediaCarouselProps = Readonly<{
   fallbackLabel: string;
   images?: ProductImage[];
   productName: string;
+  productId: string;
 }>;
 
 export function ProductMediaCarousel({
   fallbackLabel,
   images = [],
   productName,
+  productId,
 }: ProductMediaCarouselProps) {
   const slides = images.length
     ? images.map((image, index) => ({
@@ -40,6 +42,7 @@ export function ProductMediaCarousel({
         priority={index === 0}
         sizes="(min-width: 1280px) 36vw, 100vw"
         src={slide.url}
+        style={index === 0 ? { viewTransitionName: `product-image-${productId}` } : undefined}
       />
     ) : (
       <div className="flex h-full items-center justify-center bg-zinc-50">

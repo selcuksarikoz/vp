@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from 'next-view-transitions';
 
 import type { Category, Product, ProductRating } from '@/types/commerce';
 
@@ -35,6 +35,7 @@ export async function ProductDetailHero({
       <ProductMediaCarousel
         fallbackLabel={t('product.fallbackImageLabel')}
         images={product.images}
+        productId={product.id ?? 'unknown'}
         productName={name}
       />
 
@@ -46,7 +47,10 @@ export async function ProductDetailHero({
             {product.brand}
           </p>
         ) : null}
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight text-zinc-950 sm:text-5xl">
+        <h1
+          className="mt-3 text-3xl font-semibold tracking-tight text-zinc-950 sm:text-5xl"
+          style={{ viewTransitionName: `product-title-${product.id ?? 'unknown'}` }}
+        >
           {name}
         </h1>
 

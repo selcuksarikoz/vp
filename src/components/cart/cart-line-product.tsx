@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from 'next-view-transitions';
 
 import type { CartLine } from '@/types/commerce';
 
@@ -37,7 +37,11 @@ export async function CartLineProduct({ line }: CartLineProductProps) {
   const image = product.images?.[0];
 
   return (
-    <Link className="flex min-w-0 gap-4 transition-opacity hover:opacity-85" href={href}>
+    <Link
+      className="flex min-w-0 gap-4 transition-opacity hover:opacity-85"
+      href={href}
+      style={{ viewTransitionName: `product-image-${product.id ?? 'unknown'}` }}
+    >
       {/* Product Image Area */}
       <div className="relative h-22 w-22 shrink-0 overflow-hidden rounded-xl border border-black/8 bg-zinc-50 sm:h-24 sm:w-24">
         {image?.url ? (

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from 'next-view-transitions';
 
 import type { Product, ProductRating } from '@/types/commerce';
 
@@ -26,7 +26,11 @@ export async function ProductCard({ product, rating }: ProductCardProps) {
   return (
     <article className="group overflow-hidden rounded-xl border border-black/8 bg-white transition-colors duration-200 hover:border-black/14">
       {/* Product Image Area */}
-      <Link className="relative block aspect-square" href={href}>
+      <Link
+        className="relative block aspect-square"
+        href={href}
+        style={{ viewTransitionName: `product-image-${product.id}` }}
+      >
         {image?.url ? (
           <Image
             alt={image.alt ?? name}
@@ -63,7 +67,9 @@ export async function ProductCard({ product, rating }: ProductCardProps) {
             </p>
           ) : null}
           <h3 className="text-lg font-semibold tracking-tight text-zinc-950 sm:text-xl">
-            <Link href={href}>{name}</Link>
+            <Link href={href} style={{ viewTransitionName: `product-title-${product.id}` }}>
+              {name}
+            </Link>
           </h3>
           {product.description ? (
             <p className="line-clamp-2 text-sm leading-6 text-zinc-600">{product.description}</p>

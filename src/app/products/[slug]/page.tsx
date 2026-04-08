@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { ProductDetailHero } from '@/components/catalog/product-detail-hero';
 import { Container } from '@/components/ui/container';
 import { ProductViewTracker } from '@/lib/analytics/components/product-view-tracker';
+import { computeVariantQuantities } from '@/lib/cart/utils';
 import {
   getCart,
   getCategories,
@@ -51,19 +52,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   ]);
   const primaryCategoryId = product.categoryIds?.[0];
   const category = categories.find((entry) => entry.id === primaryCategoryId) ?? null;
-  const variantCartQuantities = (cart.items ?? []).reduce<Record<string, number>>(
-    (accumulator, item) => {
-      if (item.productId !== product.id) {
-        return accumulator;
-      }
-
-      const key = item.variantId || 'base';
-      accumulator[key] = (accumulator[key] || 0) + (item.quantity ?? 0);
-
-      return accumulator;
-    },
-    {},
-  );
+  const variantCartQuantities = computeVariantQuantities(cart.items, product.id ?? '');
 
   return (
     <main>
