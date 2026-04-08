@@ -3,6 +3,7 @@ import { GoogleTagManager } from '@next/third-parties/google';
 import { Inter } from 'next/font/google';
 import type { ReactNode } from 'react';
 import { Suspense } from 'react';
+import { ViewTransitions } from 'next-view-transitions';
 
 import { CatalogFooter } from '@/components/catalog/catalog-footer';
 import { CatalogHeader } from '@/components/catalog/catalog-header';
@@ -43,24 +44,26 @@ type RootLayoutProps = Readonly<{
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html data-theme={TENANT_CONFIG.theme} lang={DEFAULT_LANGUAGE}>
-      <body className={`${inter.variable} font-sans`}>
-        {ANALYTICS_CONSTANTS.gtmId ? (
-          <GoogleTagManager
-            dataLayerName={ANALYTICS_CONSTANTS.dataLayerName}
-            gtmId={ANALYTICS_CONSTANTS.gtmId}
-          />
-        ) : null}
-        <Providers>
-          <div className="relative flex min-h-screen flex-col">
-            <Suspense fallback={<HeaderSkeleton />}>
-              <CatalogHeader />
-            </Suspense>
-            <div className="flex-1">{children}</div>
-            <CatalogFooter />
-          </div>
-        </Providers>
-      </body>
-    </html>
+    <ViewTransitions>
+      <html data-theme={TENANT_CONFIG.theme} lang={DEFAULT_LANGUAGE}>
+        <body className={`${inter.variable} font-sans`}>
+          {ANALYTICS_CONSTANTS.gtmId ? (
+            <GoogleTagManager
+              dataLayerName={ANALYTICS_CONSTANTS.dataLayerName}
+              gtmId={ANALYTICS_CONSTANTS.gtmId}
+            />
+          ) : null}
+          <Providers>
+            <div className="relative flex min-h-screen flex-col">
+              <Suspense fallback={<HeaderSkeleton />}>
+                <CatalogHeader />
+              </Suspense>
+              <div className="flex-1">{children}</div>
+              <CatalogFooter />
+            </div>
+          </Providers>
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }
