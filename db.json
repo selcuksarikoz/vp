@@ -1,0 +1,296 @@
+{
+  "products": [
+    {
+      "id": "prod_2005",
+      "sku": "HQD-SURV",
+      "name": "HQD SURV",
+      "slug": "hqd-surv",
+      "description": "Die HQD SURV ist eine kompakte Einweg E-Zigarette mit Mesh Coil Technologie, hoher Zuganzahl und intensiven Geschmacksrichtungen. Ideal für Einsteiger und den täglichen Gebrauch.",
+      "brand": "HQD",
+      "categoryIds": [
+        "cat_vapes"
+      ],
+      "price": {
+        "gross": 7.99,
+        "currency": "EUR"
+      },
+      "attributes": [
+        {
+          "name": "Züge",
+          "value": "bis zu 600"
+        },
+        {
+          "name": "Nikotin",
+          "value": "20 mg/ml"
+        },
+        {
+          "name": "Typ",
+          "value": "Einweg Vape"
+        },
+        {
+          "name": "Coil",
+          "value": "Mesh Coil"
+        },
+        {
+          "name": "Akku",
+          "value": "integriert"
+        }
+      ],
+      "stock": {
+        "isInStock": true,
+        "note": "Verfügbarkeit je nach Geschmack"
+      },
+      "images": [
+        {
+          "url": "/images/hqd-surv.webp",
+          "alt": "HQD SURV Einweg Vape"
+        }
+      ],
+      "seo": {
+        "title": "HQD SURV Einweg Vape kaufen",
+        "description": "HQD SURV Disposable Vape mit bis zu 600 Zügen, Mesh Coil und intensiven Geschmacksrichtungen."
+      }
+    },
+    {
+      "id": "prod_2002",
+      "sku": "SALT-SWITCH-ORIENTAL",
+      "name": "Salt Switch – Oriental Tobacco",
+      "slug": "salt-switch-oriental-tobacco",
+      "description": "Einweg Vape mit bis zu 800 Zügen, 20 mg Nikotin und vielfältigen Geschmacksrichtungen.",
+      "brand": "SALT",
+      "categoryIds": [
+        "cat_vapes"
+      ],
+      "price": {
+        "gross": 8.49,
+        "currency": "EUR"
+      },
+      "attributes": [
+        {
+          "name": "Züge",
+          "value": "bis zu 800"
+        },
+        {
+          "name": "Nikotin",
+          "value": "20 mg"
+        },
+        {
+          "name": "Typ",
+          "value": "Einweg Vape"
+        },
+        {
+          "name": "Geschmack",
+          "value": "Oriental Tobacco"
+        }
+      ],
+      "stock": {
+        "isInStock": true,
+        "note": "Nur begrenzter Bestand"
+      },
+      "images": [
+        {
+          "url": "/images/salt-switch-2.webp",
+          "alt": "Salt Switch Vape"
+        },
+        {
+          "url": "/images/salt-switch.webp",
+          "alt": "Salt Switch Vape"
+        }
+      ]
+    },
+    {
+      "id": "prod_2003",
+      "sku": "ELFBAR-DISPLAY-3",
+      "name": "Elfbar Elfa Display Nr. 3",
+      "slug": "elfbar-elfa-display-3",
+      "description": "Hochwertiges Verkaufsdisplay mit LED-Beleuchtung und Diebstahlschutz für Elfbar Produkte.",
+      "brand": "ELFBAR",
+      "categoryIds": [
+        "cat_accessories"
+      ],
+      "attributes": [
+        {
+          "name": "Kapazität",
+          "value": "36 Pods + 36 Geräte"
+        },
+        {
+          "name": "Besonderheiten",
+          "value": "LED Beleuchtung, abschließbar"
+        },
+        {
+          "name": "Einsatz",
+          "value": "POS Display"
+        }
+      ],
+      "images": [
+        {
+          "url": "/images/elfbar-display.webp",
+          "alt": "Elfbar Display"
+        }
+      ]
+    },
+    {
+      "id": "prod_2004",
+      "sku": "ELFBAR-MAX-BUNDLE",
+      "name": "Elfbar MAX Bundle + Display",
+      "slug": "elfbar-max-bundle",
+      "description": "Komplettes Verkaufsbundle mit 50 Geräten, 50 Pods und einem gratis Display.",
+      "brand": "ELFBAR",
+      "categoryIds": [
+        "cat_bundles"
+      ],
+      "attributes": [
+        {
+          "name": "Inhalt",
+          "value": "50 Geräte + 50 Pods + Display"
+        },
+        {
+          "name": "Typ",
+          "value": "Bundle"
+        },
+        {
+          "name": "Einsatz",
+          "value": "Retail Setup"
+        }
+      ],
+      "images": [
+        {
+          "url": "/images/elfbar-bundle.webp",
+          "alt": "Elfbar Bundle"
+        }
+      ]
+    },
+    {
+      "id": "prod_3001",
+      "sku": "VAPEBOX-TOWER",
+      "name": "Vapebox TOWER",
+      "slug": "vapebox-tower",
+      "description": "Professionelles Verkaufsdisplay für Vapes, Pods, Liquids und Tabak mit großem Fassungsvermögen, LED-Beleuchtung und integriertem Diebstahlschutz.",
+      "brand": "Vapebox24",
+      "categoryIds": [
+        "cat_displays"
+      ],
+      "price": {
+        "gross": null,
+        "currency": "EUR",
+        "note": "Preis nur für eingeloggte B2B-Kunden sichtbar"
+      },
+      "attributes": [
+        {
+          "name": "Einsatz",
+          "value": "POS Verkaufsdisplay"
+        },
+        {
+          "name": "Kapazität",
+          "value": "bis zu 1800 Artikel"
+        },
+        {
+          "name": "Features",
+          "value": "LED Beleuchtung, Fernbedienung, Diebstahlschutz"
+        },
+        {
+          "name": "System",
+          "value": "Modulares Schub- und Regalsystem"
+        }
+      ],
+      "stock": {
+        "isInStock": true,
+        "note": "Lieferung innerhalb von 48h (werktags)"
+      },
+      "images": [
+        {
+          "url": "/images/vapebox-tower-1.webp",
+          "alt": "Vapebox Tower Display"
+        },
+        {
+          "url": "/images/vapebox-tower-2.webp",
+          "alt": "Vapebox Tower Display"
+        },
+        {
+          "url": "/images/vapebox-tower-3.webp",
+          "alt": "Vapebox Tower Display"
+        },
+        {
+          "url": "/images/vapebox-tower-4.webp",
+          "alt": "Vapebox Tower Display"
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_tower_130",
+          "name": "TOWER130",
+          "dimensions": {
+            "width": "60 cm",
+            "height": "130 cm",
+            "depth": "37.5 cm"
+          },
+          "capacity": "900+ Artikel"
+        },
+        {
+          "id": "var_tower_200",
+          "name": "TOWER200",
+          "dimensions": {
+            "width": "48.5 cm",
+            "height": "200 cm",
+            "depth": "37.5 cm"
+          },
+          "capacity": "900+ Artikel"
+        },
+        {
+          "id": "var_tower_twin",
+          "name": "TwinTower",
+          "dimensions": {
+            "width": "90 cm",
+            "height": "200 cm",
+            "depth": "37.5 cm"
+          },
+          "capacity": "bis zu 1800 Artikel"
+        }
+      ],
+      "seo": {
+        "title": "Vapebox TOWER Verkaufsdisplay kaufen",
+        "description": "Professionelles POS Display für Vapes mit LED, Diebstahlschutz und hoher Kapazität."
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_vapes",
+      "name": "Einweg Vapes",
+      "slug": "einweg-vapes",
+      "parentId": null
+    },
+    {
+      "id": "cat_pods",
+      "name": "Pods & Systeme",
+      "slug": "pods",
+      "parentId": null
+    },
+    {
+      "id": "cat_accessories",
+      "name": "Zubehör",
+      "slug": "zubehoer",
+      "parentId": null
+    },
+    {
+      "id": "cat_bundles",
+      "name": "Bundles",
+      "slug": "bundles",
+      "parentId": null
+    },
+    {
+      "id": "cat_displays",
+      "name": "TOWER",
+      "slug": "tower",
+      "href": "/products/vapebox-tower",
+      "parentId": null
+    }
+  ],
+  "cart": {
+    "id": "cart_1",
+    "items": [],
+    "currency": "EUR",
+    "updatedAt": "2026-04-08T22:08:55.172Z"
+  },
+  "$schema": "./node_modules/json-server/schema.json"
+}
