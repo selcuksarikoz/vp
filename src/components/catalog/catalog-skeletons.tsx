@@ -49,3 +49,18 @@ export function ProductGridSkeleton({ count = 6 }: Readonly<{ count?: number }>)
     </div>
   );
 }
+
+export function CategoryPageSkeleton() {
+  return (
+    <>
+      <section className="rounded-xl border border-black/10 bg-white p-6 sm:p-8 lg:p-10">
+        <SkeletonLine className="h-4 w-28" />
+        <SkeletonLine className="mt-4 h-4 w-full" />
+        <SkeletonLine className="mt-2 h-4 w-3/4" />
+      </section>
+      <div className="pt-8">
+        <ProductGridSkeleton />
+      </div>
+    </>
+  );
+}
