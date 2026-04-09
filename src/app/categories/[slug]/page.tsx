@@ -36,9 +36,20 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   };
 }
 
+async function CategoryProductsPageContent({
+  queryPromise,
+  slug,
+}: Readonly<{
+  queryPromise: CategoryPageProps['searchParams'];
+  slug: string;
+}>) {
+  const { q } = await queryPromise;
+
+  return <ProductsPageContent activeCategorySlug={slug} query={q ?? null} />;
+}
+
 export default async function CategoryPage({ params, searchParams }: CategoryPageProps) {
   const { slug } = await params;
-  const { q } = await searchParams;
   const category = await getCategoryBySlug(slug);
 
   if (!category) {
@@ -53,7 +64,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
     <main>
       <Container className="section-padding">
         <Suspense fallback={<CategoryPageSkeleton />}>
-          <ProductsPageContent activeCategorySlug={slug} query={q ?? null} />
+          <CategoryProductsPageContent queryPromise={searchParams} slug={slug} />
         </Suspense>
       </Container>
     </main>
