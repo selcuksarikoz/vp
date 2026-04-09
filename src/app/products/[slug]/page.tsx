@@ -55,17 +55,15 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const variantCartQuantities = computeVariantQuantities(cart.items, product.id ?? '');
 
   return (
-    <main>
-      <Container className="section-padding space-y-8">
-        <ProductViewTracker product={product} />
-        <ProductDetailHero
-          category={category}
-          hasRated={ratingState.hasRated}
-          product={product}
-          rating={ratingState.rating}
-          variantCartQuantities={variantCartQuantities}
-        />
-      </Container>
-    </main>
+    <Container className="section-padding space-y-8">
+      <ProductViewTracker product={product} />
+      <ProductDetailHero
+        category={category}
+        hasRated={ratingState.hasRated}
+        product={product}
+        rating={ratingState.rating}
+        variantCartQuantities={variantCartQuantities}
+      />
+    </Container>
   );
 }

@@ -61,12 +61,10 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
   }
 
   return (
-    <main>
-      <Container className="section-padding">
-        <Suspense fallback={<CategoryPageSkeleton />}>
-          <CategoryProductsPageContent queryPromise={searchParams} slug={slug} />
-        </Suspense>
-      </Container>
-    </main>
+    <Container className="section-padding">
+      <Suspense fallback={<CategoryPageSkeleton />}>
+        <CategoryProductsPageContent queryPromise={searchParams} slug={slug} />
+      </Suspense>
+    </Container>
   );
 }

@@ -10,7 +10,7 @@ export default async function CartPage() {
   const isEmpty = !lines.length;
 
   return (
-    <main>
+    <>
       <Container className="section-padding pb-6 lg:pb-8">
         <div className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-zinc-500">
@@ -31,6 +31,6 @@ export default async function CartPage() {
         </div>
         {isEmpty ? null : <CartSummary summary={summary} />}
       </Container>
-    </main>
+    </>
   );
 }

@@ -22,12 +22,10 @@ async function ProductsListingContent({
 
 export default async function ProductsPage({ searchParams }: ProductsPageProps) {
   return (
-    <main>
-      <Container className="section-padding">
-        <Suspense fallback={<CategoryPageSkeleton />}>
-          <ProductsListingContent queryPromise={searchParams} />
-        </Suspense>
-      </Container>
-    </main>
+    <Container className="section-padding">
+      <Suspense fallback={<CategoryPageSkeleton />}>
+        <ProductsListingContent queryPromise={searchParams} />
+      </Suspense>
+    </Container>
   );
 }
