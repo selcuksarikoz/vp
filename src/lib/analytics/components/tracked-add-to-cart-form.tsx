@@ -1,6 +1,6 @@
 'use client';
 
-import { useActionState, useEffect } from 'react';
+import { useActionState, useEffect, useRef } from 'react';
 import type { ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
 import { toast } from 'react-toastify';
@@ -25,8 +25,19 @@ export function TrackedAddToCartForm({
 }: TrackedAddToCartFormProps) {
   const pathname = usePathname();
   const [state, formAction] = useActionState(addToCartAction, initialAddToCartActionState);
+  const previousStateRef = useRef(state);
 
   useEffect(() => {
+    const previousState = previousStateRef.current;
+    const hasStateChanged =
+      previousState.status !== state.status || previousState.message !== state.message;
+
+    if (!hasStateChanged) {
+      return;
+    }
+
+    previousStateRef.current = state;
+
     if (state.status === 'success' && state.message) {
       toast.success(state.message);
     }

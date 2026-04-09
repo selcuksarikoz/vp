@@ -47,7 +47,7 @@ export async function CartLineItems({ lines }: CartLineItemsProps) {
           key={line.id}
         >
           {line.product?.id ? (
-            <div className="absolute right-0 top-0 z-10 -mt-4 -mr-4 opacity-0 transition-opacity duration-200 group-hover:opacity-100 sm:-mt-5 sm:-mr-5">
+            <div className="absolute right-0 top-0 z-10 -mt-4 -mr-4 opacity-100 transition-opacity duration-200 sm:-mt-5 sm:-mr-5 sm:opacity-0 sm:group-hover:opacity-100">
               <CartLineRemoveButton productId={line.product.id} variantId={line.variant?.id} />
             </div>
           ) : null}

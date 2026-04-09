@@ -7,7 +7,9 @@
       "slug": "hqd-surv",
       "description": "Die HQD SURV ist eine kompakte Einweg E-Zigarette mit Mesh Coil Technologie, hoher Zuganzahl und intensiven Geschmacksrichtungen. Ideal für Einsteiger und den täglichen Gebrauch.",
       "brand": "HQD",
-      "categoryIds": ["cat_vapes"],
+      "categoryIds": [
+        "cat_vapes"
+      ],
       "price": {
         "gross": 7.99,
         "currency": "EUR"
@@ -56,7 +58,9 @@
       "slug": "salt-switch-oriental-tobacco",
       "description": "Einweg Vape mit bis zu 800 Zügen, 20 mg Nikotin und vielfältigen Geschmacksrichtungen.",
       "brand": "SALT",
-      "categoryIds": ["cat_vapes"],
+      "categoryIds": [
+        "cat_vapes"
+      ],
       "price": {
         "gross": 8.49,
         "currency": "EUR"
@@ -101,7 +105,9 @@
       "slug": "elfbar-elfa-display-3",
       "description": "Hochwertiges Verkaufsdisplay mit LED-Beleuchtung und Diebstahlschutz für Elfbar Produkte.",
       "brand": "ELFBAR",
-      "categoryIds": ["cat_accessories"],
+      "categoryIds": [
+        "cat_accessories"
+      ],
       "attributes": [
         {
           "name": "Kapazität",
@@ -130,7 +136,9 @@
       "slug": "elfbar-max-bundle",
       "description": "Komplettes Verkaufsbundle mit 50 Geräten, 50 Pods und einem gratis Display.",
       "brand": "ELFBAR",
-      "categoryIds": ["cat_bundles"],
+      "categoryIds": [
+        "cat_bundles"
+      ],
       "attributes": [
         {
           "name": "Inhalt",
@@ -159,7 +167,9 @@
       "slug": "vapebox-tower",
       "description": "Professionelles Verkaufsdisplay für Vapes, Pods, Liquids und Tabak mit großem Fassungsvermögen, LED-Beleuchtung und integriertem Diebstahlschutz.",
       "brand": "Vapebox24",
-      "categoryIds": ["cat_displays"],
+      "categoryIds": [
+        "cat_displays"
+      ],
       "price": {
         "gross": null,
         "currency": "EUR",
@@ -280,7 +290,7 @@
     "id": "cart_1",
     "items": [],
     "currency": "EUR",
-    "updatedAt": "2026-04-08T22:08:55.172Z"
+    "updatedAt": "2026-04-09T00:58:20.674Z"
   },
   "$schema": "./node_modules/json-server/schema.json"
 }
