@@ -17,7 +17,7 @@ export function formatCurrency(
     return 'Price on request';
   }
 
-  return new Intl.NumberFormat('de-DE', {
+  return new Intl.NumberFormat(CART_CONSTANTS.format, {
     style: 'currency',
     currency,
     maximumFractionDigits: 2,

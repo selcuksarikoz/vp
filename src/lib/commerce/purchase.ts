@@ -1,11 +1,6 @@
 import type { Product, ProductVariant } from '@/types/commerce';
 
 /**
- *
- * @param product
- * @returns
- */
-/**
  * @description Filters a product's variants down to variants that can actually be selected.
  * @param product The product being purchased.
  * @returns The selectable product variants.
